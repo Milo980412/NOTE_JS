@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>if练习3</title>
+		<script type="text/javascript">
+			/*
+			 * 	编写程序，由键盘输入三个整数分别存入变量num1、num2、num3，
+			 * 	对他们进行排序，并且从小到大输出。
+			 */
+			var temp = 0;
+			var num1 = +prompt("请输入num1:");
+			var num2 = +prompt("请输入num2:");
+			var num3 = +prompt("请输入num3:");
+			if(num1>num2){
+				temp = num1;
+				num1 = num2;
+				num2 = temp;
+			}else if(num2>num3){
+				temp = num2;
+				num2 = num3;
+				num3 = temp;
+				if(num1>num3){
+					temp = num1;
+					num1 = num3;
+					num3 = temp;
+				}
+			}
+			alert(num1 + " " + num2 + " " + num3)	;	
+			
+ 		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
